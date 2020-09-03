@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../mycss/form_tra_cuu.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div id="container" >
+    <div id="header" style="display: block;">
+        <div id="topnav" >
+            <ul>
+                <li><a href="">Trang chủ</a></li>
+                <li><a href="#content">Tra cứu</a></li>
+                <li><a href="">Đăng xuất</a></li>
+                <li><a href="">Đổi mật khẩu</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="content"  >
+        <div class="search_area" style="display: block;">
+            <form action="" >
+                <fieldset >
+                    <legend >Thông tin cần tìm </legend><br><br>
+                    <label for="fname" >Họ và tên</label>
+                    <input type="text" id="fname" name="fname" autocomplete="off">
+                    <label for="MSSV">MSSV</label>
+                    <input type="text" id="MSSV" name="MSSV" autocomplete="off">
+                    <label for="Year">Năm sinh</label>
+                    <input type="text" id="year" name="year" autocomplete="off">
+                    <label for="Khoa">Khoa</label>
+                    <input list="Khoa" name="Khoa" autocomplete="off">
+                        <datalist id="Khoa">
+                            <option value="Điện - điện tử">
+                            <option value="Máy tính">
+                            <option value="Cơ khí">
+                            <option value="Hoá học">
+                            <option value="Xây dựng">
+                        </datalist>
+                    <label  for="Email" autocomplete="off">Email</label>
+                    <input style="color:#888888" value="...@hcmut.edu.vn" type="text" id="Email" name="Email" autocomplete="off" onclick="changecolor()">
+                    <label for="SDT">Số điện thoại</label>
+                    <input type="text" id="SDT" name="SDT" autocomplete="off" >
+    
+                    <p><input type="submit" id="button" value="Tìm kiếm" for="text" float style="text-align:center; float:none; width: 80px; height: 25px; padding:3px 10px 10px 10px;" ></p>
+
+                </fieldset>       
+            </form>
+        </div>
+        
+        <div class="search_button" style="display: block;">
+            <h1 style="text-align: center; margin:0"> Danh sách thông tin tìm được</h1>
+        </div>
+        
+        <form action="" method=""  >
+            <input type="submit" value="Xoá" id="button" style="width: 73px; float:right; margin: 5px; display: block;" for="checkbox" >
+            <a id="button" href="../Bang_ca_nhan/form.html" style="float: right; width: 50px; margin: 5px; display: block;">Tạo mới</a>
+            <div id="table_wrap">
+            <table >
+                <div>         
+                <tr class="sticky">
+                    <th>STT</th>
+                    <th>Họ và tên</th>
+                    <th>MSSV</th> 
+                    <th>Năm sinh</th>
+                    <th>Khoa</th> 
+                    <th>Email</th>
+                    <th>SĐT</th>
+                    <th>Chi tiết</th>
+                    <th >Xoá</th>
+                
+                </div>   
+                </tr>  
+                <tr class="show">
+                    <td>1</td>
+                    <td>Lê Văn Tèo</td>
+                    <td>1710000</td> 
+                    <td>1999</td>
+                    <td>Máy tính</td> 
+                    <td>abcxyz@hcmut.edu.vn</td>
+                    <td>0123456789</td>
+                    <td class="hide"><button><a href="../Bang_ca_nhan/form.html">Chi tiết</a></button></td>
+                    <td><input type="checkbox" id="hang_1" name="so" value="1"></td>
+                </tr>
+                <tr class="show">
+                    <td>2</td>
+                    <td>Trần Văn TIến</td>
+                    <td>1710001</td> 
+                    <td>1999</td>
+                    <td>Điện-điện tử học</td> 
+                    <td>abcxyz@hcmut.edu.vn</td>
+                    <td>0123456789</td>
+                    <td class="hide"><button><a href="../Bang_ca_nhan/form.html">Chi tiết</a></button></td>
+                    <td><input type="checkbox" id="hang_2" name="so" value="2"></td>
+                </tr>
+                <tr class="show">
+                    <td>3</td>
+                    <td>Nguyễn Văn Ba</td>
+                    <td>1710002</td> 
+                    <td>1999</td>
+                    <td>Hoá học</td> 
+                    <td>abcxyz@hcmut.edu.vn</td>
+                    <td>0123456789</td>
+                    <td class="hide"><button><a href="../Bang_ca_nhan/form.html">Chi tiết</a></button></td>
+                    <td><input type="checkbox" id="hang_3" name="so" value="3"></td>
+                </tr>
+                <tr class="show">
+                    <td>4</td>
+                    <td>Tiến Văn Sang</td>
+                    <td>1710004</td> 
+                    <td>1999</td>
+                    <td>Cơ khí</td> 
+                    <td>abcxyz@hcmut.edu.vn</td>
+                    <td>0123456789</td>
+                    <td class="hide"><button><a href="../Bang_ca_nhan/form.html">Chi tiết</a></button></td>
+                    <td><input type="checkbox" id="hang_4" name="so" value="4"></td>
+                </tr>
+                
+            
+            </table>
+        </div>
+        </form>
+    </div>
+
+    <script src="../myjs/form_tra_cuu.js"></script>
+</div>
+</body>
+</html>

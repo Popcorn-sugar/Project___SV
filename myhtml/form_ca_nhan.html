@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../mycss/form_ca_nhan.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div id="row"  class="header" style="margin-top: 5%;">
+    <p style="text-align: center;"><img src="../Image/logo.png" style="width: 50px; height: 50px; margin-top: 40px;"></img></p>
+    <h1 style="text-align: center;">ĐẠI HỌC BÁCH KHOA THÀNH PHỐ HỒ CHÍ MINH</h1>
+</div>
+
+<div id="row">
+    <div class="col left">
+        <p><img src="" class="avatar" ></img></p><br>
+        <input  type='file' accept="image/*" id="avatar" name="avatar"  style="display: none">
+        <label for="avatar" id="avatar_button">Cập nhật</label>
+
+    </div>
+
+    <div class="col right">
+        <form action="/action_page.php" method="dialog">
+            <fieldset  class="box" style="overflow: hidden;">
+                <legend>Thông tin sinh viên:</legend><br><br>
+
+                <label for="fname">Họ và tên</label>
+                <input type="text" id="fname" name="fname" autocomplete="off"><br><br>
+                <label for="MSSV">MSSV</label>
+                <input type="text" id="MSSV" name="MSSV" autocomplete="off"><br><br>
+                <label for="Year">Năm sinh</label>
+                <input type="text" id="year" name="year" autocomplete="off"><br><br>
+                <label for="Khoa">Khoa</label>
+                <input list="Khoa" name="Khoa" autocomplete="off"><br><br>
+                    <datalist id="Khoa">
+                        <option value="Điện - điện tử">
+                        <option value="Máy tính">
+                        <option value="Cơ khí">
+                        <option value="Hoá học">
+                        <option value="Xây dựng">
+                    </datalist>
+                <label for="Email" autocomplete="off">Email</label>
+                <p style="float:right;margin:0;display: block;width: 30%;">@hcmut.edu.vn</p>
+                <input type="text" id="Email" name="Email" style="width: 40%; margin-right:0%" autocomplete="off"><br><br>
+                <label for="SDT">Số điện thoại</label>
+                <input type="text" id="SDT" name="SDT" ><br><br>
+
+                <br><br>
+                <p style="text-align:center; float:none; width: 40%; margin: 0 0 25% 25%;" ><input id="avatar_button" type="submit"  float onclick="SubmitBut()"></p>
+        </form>
+    </div>
+</div>
+
+<script src="../myjs/form_ca_nhan.js"></script>
+</body>
+</html>

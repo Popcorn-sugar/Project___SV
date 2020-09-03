@@ -1,0 +1,42 @@
+<!-- Form đăng ký tài khoản -->
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../mycss/form_ca_nhan.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+    <div id="row"  class="header" style="margin-top: 5%;">
+        <p style="text-align: center;"><img src="../Image/logo.png" style="width: 50px; height: 50px; margin-top: 40px;"></img></p>
+        <h1 style="text-align: center;">ĐẠI HỌC BÁCH KHOA THÀNH PHỐ HỒ CHÍ MINH</h1>
+    </div>
+
+    <div id="row" style="height: fit-content;">
+        <div class="col left">
+        <p><img class="avatar" ></img></p><br>
+            <input  type='file' accept="image/*" id="avatar" name="avatar"  style="display: none">
+            <label for="avatar" id="avatar_button">Cập nhật</label>
+            <p id="display_box" style="display:none"></p>
+        </div>
+
+        <div class="col right" style=" height: fit-content;">
+            <form name="submitForm" action="speed.php" method="get"   onsubmit="return validateFormCaNhan()">
+            <fieldset  class="box" style="overflow: hidden; height: fit-content;">
+                <legend>Đăng ký tài khoản:</legend><br><br>
+                <!-- Username -->
+                <label for="username">Tài khoản</label>
+                <input type="text" id="username" name="username"  maxlength="30" autocomplete="off" placeholder="Tên đăng nhập"><br><br>
+                <!-- Password -->
+                <label for="password">Mật khẩu</label>
+                <input type="text" id="password" name="password"  maxlength="30" autocomplete="off" placeholder="Nhập mật khẩu" ><br><br>
+                <!-- Name -->
+                <label for="name">Họ và tên</label>
+                <input type="text" id="name" name="name"  maxlength="30" autocomplete="off" placeholder="Nhập họ và tên"><br><br>
+                <p style="text-align:center; float: left; width: 40%; margin: 0 30% 0 30%;" ><input id="avatar_button" type="submit" value="Đăng ký"  float></p>
+        </div>
+    </div>
+
+</body>
+</html>
